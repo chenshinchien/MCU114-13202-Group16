@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telephone Pad"
+        android:background="#00994C"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:padding="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- 電話號碼顯示 -->
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="電話號碼："
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        android:gravity="center_vertical"
+        android:textColor="#000000" />
+
+    <!-- 數字鍵盤 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginTop="20dp">
+
+        <Button android:id="@+id/btn1" android:text="1" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn2" android:text="2" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn3" android:text="3" style="@style/NumberButtonStyle"/>
+
+        <Button android:id="@+id/btn4" android:text="4" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn5" android:text="5" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn6" android:text="6" style="@style/NumberButtonStyle"/>
+
+        <Button android:id="@+id/btn7" android:text="7" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn8" android:text="8" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn9" android:text="9" style="@style/NumberButtonStyle"/>
+
+        <Button android:id="@+id/btnStar" android:text="*" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btn0" android:text="0" style="@style/NumberButtonStyle"/>
+        <Button android:id="@+id/btnClear" android:text="清除" style="@style/NumberButtonStyle"/>
+    </GridLayout>
+
+    <!-- CALL 按鈕 -->
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="234dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/call_button_background"
+        android:text="CALL"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
