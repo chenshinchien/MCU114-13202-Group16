@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ThreadHandler</string>
+
+    <string name="tab_start">Start</string>
+    <string name="tab_progress">Progress</string>
+    <string name="tab_result">Result</string>
+</resources>
