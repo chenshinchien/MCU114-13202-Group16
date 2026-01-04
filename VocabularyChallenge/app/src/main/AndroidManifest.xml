@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_vocabchallenge"
+        android:label="Vocabulary Challenge"
+        android:roundIcon="@mipmap/ic_vocabchallenge_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VocabularyChallenge">
+        <activity
+            android:name=".ui.AdminActivity"
+            android:exported="false" />
+        <activity android:name=".ui.RecordsActivity" />
+        <activity android:name=".ui.FeedbackActivity" />
+        <activity android:name=".ui.ResultActivity" />
+        <activity android:name=".ui.QuizActivity" />
+        <activity android:name=".ui.VocabListActivity" />
+        <activity android:name=".ui.MainMenuActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.UsageService"
+            android:exported="false" />
+
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name=".provider.VocabProvider"
+            android:authorities="com.example.vocabularychallenge.provider"
+            android:exported="false" />
+
+        <receiver android:name=".receiver.CountdownReceiver" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 應用程式的基礎主題 -->
+    <style name="Base.Theme.VocabularyChallenge" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 主要品牌顏色 -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- 次要品牌顏色 -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- 關鍵設定：將視窗背景設為透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 最終應用到 App 的主題 -->
+    <style name="Theme.VocabularyChallenge" parent="Base.Theme.VocabularyChallenge" />
+
+    <!-- 測驗選項按鈕的統一風格 -->
+    <style name="QuizChoiceButton" parent="Widget.Material3.Button">
+
+        <!-- "backgroundTint" 來自 app 命名空間，所以 name 中不帶前綴 -->
+        <item name="backgroundTint">#B3FFFFFF</item>
+
+        <!-- ▼▼▼ 已修正：為 Android 核心屬性加上 "android:" 前綴 ▼▼▼ -->
+
+        <!-- "textColor" 來自 android 命名空間，所以 name 中需要保留前綴 -->
+        <item name="android:textColor">@android:color/black</item>
+
+        <!-- "textSize" 來自 android 命名空間，所以 name 中需要保留前綴 -->
+        <item name="android:textSize">16sp</item>
+
+        <!-- "paddingVertical" 來自 android 命名空間，所以 name 中需要保留前綴 -->
+        <item name="android:paddingVertical">12dp</item>
+    </style>
+
+</resources>
